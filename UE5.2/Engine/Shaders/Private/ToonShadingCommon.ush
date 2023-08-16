@@ -1,0 +1,4 @@
+float3 ToonStep(float feather, float halfLambert, float threshold = 0.5f)
+{
+	return smoothstep(threshold - feather, threshold + feather, halfLambert);
+}
